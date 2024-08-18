@@ -10,14 +10,15 @@ from typing import Tuple, List
 import math
 import csv
 
+
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
-    """                                                                                                                                              
-    Args:                                                                                                                                            
-        page (int): The current page number (1-indexed).                                                                                             
-        page_size (int): The number of items per page.                                                                                               
-                                                                                                                                                     
-    Returns:                                                                                                                                         
-        tuple: A tuple containing the start index and the end index.                                                                                 
+    """
+    Args:
+        page (int): The current page number (1-indexed).
+        page_size (int): The number of items per page.
+
+    Returns:
+        tuple: A tuple containing the start index and the end index.
     """
 
     start_index = (page - 1) * page_size
@@ -54,4 +55,3 @@ class Server:
         if start_index >= len(dataset):
             return []  # Return an empty list if out of range
         return dataset[start_index:end_index]
-
