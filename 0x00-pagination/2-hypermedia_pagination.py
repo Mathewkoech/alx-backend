@@ -69,4 +69,3 @@ class Server:
         }
 
         return hyper_data
-    
