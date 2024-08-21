@@ -23,7 +23,6 @@ class BasicCache(BaseCaching):
         if key is not None and item is not None:
             self.cache_data[key] = item
 
-
     def get(self, key):
         """
         Retrieves an item from the cache.
@@ -35,4 +34,3 @@ class BasicCache(BaseCaching):
             any: The cached item, or None if not found.
         """
         return self.cache_data.get(key)
-    
