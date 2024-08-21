@@ -59,4 +59,3 @@ class LFUCache(BaseCaching):
         """ Return the current time in milliseconds for ordering
         """
         return int(time() * 1000)
-    

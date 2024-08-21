@@ -43,4 +43,3 @@ class MRUCache(BaseCaching):
             self.key_tracker.append(key)
             return self.cache_data[key]
         return None
-    
