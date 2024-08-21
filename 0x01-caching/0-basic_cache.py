@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-
+""" Basic dictionary module
+"""
 from base_caching import BaseCaching
 
 
@@ -33,4 +34,4 @@ class BasicCache(BaseCaching):
         Returns:
             any: The cached item, or None if not found.
         """
-        return self.cache_data.get(key)
+        return self.cache_data.get(key, None)
