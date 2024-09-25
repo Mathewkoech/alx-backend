@@ -1,5 +1,4 @@
-
-
+// Description: Create a job creator function that accepts a queue and an array of jobs.
 export default function createPushNotificationsJobs(jobs, queue) {
     if (!Array.isArray(jobs)) {
         throw Error('Jobs is not an array');
